@@ -7,6 +7,7 @@ public static class AllConst
 {
     public const int poolingNum = 6;
     public const int stageNum = 10;
+    public const int waveNum = 2;
 }
 public enum ColiderBox
 {

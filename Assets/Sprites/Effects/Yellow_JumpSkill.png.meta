@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ed164fec4bc20247b2ad8611bd17171
+guid: 9fd7015d88d459345a3a3d88150bcf78
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obstacles_logs_0
+      name: Yellow_JumpSkill_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 24
-        width: 374
-        height: 78
+        x: 37
+        y: 261
+        width: 182
+        height: 183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,8 +155,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504a45931ecea19448b7b59fdfb01614
-      internalID: 2023266601
+      spriteID: 0803cc2e9ea1b6f44b179cfaa562c179
+      internalID: -1896292553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_JumpSkill_1
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 261
+        width: 182
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03ddf6328ffa7c4a9297156d71e7d0d
+      internalID: -388042735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_JumpSkill_10
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 7
+        width: 186
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b872dc3e322800f45b36247f5f335eae
+      internalID: 37486848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_JumpSkill_11
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 5
+        width: 186
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d826b1d4bd0286429a8b2a4c811edb2
+      internalID: -11569918
       vertices: []
       indices: 
       edges: []
@@ -172,7 +235,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Obstacles_logs_0: 2023266601
+      Yellow_JumpSkill_0: -1896292553
+      Yellow_JumpSkill_1: -388042735
+      Yellow_JumpSkill_10: 37486848
+      Yellow_JumpSkill_11: -11569918
+      Yellow_JumpSkill_2: 29816386
+      Yellow_JumpSkill_3: 502641268
+      Yellow_JumpSkill_4: 1396820322
+      Yellow_JumpSkill_5: 1009631426
+      Yellow_JumpSkill_6: 1372719247
+      Yellow_JumpSkill_7: 468240103
+      Yellow_JumpSkill_8: -287627861
+      Yellow_JumpSkill_9: -563159737
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

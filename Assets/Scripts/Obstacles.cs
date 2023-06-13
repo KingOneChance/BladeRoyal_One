@@ -27,12 +27,21 @@ public class Obstacles : MonoBehaviour
         diceShield = FindObjectOfType<DiceShield>();
         diceWeapon.del_ColideAction += TakeAction;
     }
+    private void OnEnable()
+    {
+        if(GameManager.Instance.GetStageNum()>1)
+            SetMyState();
+    }
+    private void Start()
+    {
+        gameObject.AddComponent<PolygonCollider2D>();
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         switch (collision.tag)
         {
             case "GroundPlayer": GameManager.Instance.DieHearts(); break;
-            case "Weapon": GetDamage(); break;
+            case "Weapon": GetDamage(diceWeapon.GetDamageValue()); break;
         }
     }
     private void TakeAction(ColiderBox coliderBox, int idx)
@@ -41,7 +50,7 @@ public class Obstacles : MonoBehaviour
         switch (coliderBox)
         {
             case ColiderBox.Shield: ShieldAction(); break;
-            case ColiderBox.Weapon: GetDamage(); break;
+            case ColiderBox.Weapon: GetDamage(diceWeapon.GetDamageValue()); break;
         }
     }
     /// <summary>
@@ -62,15 +71,27 @@ public class Obstacles : MonoBehaviour
         mySpriteRenderer.sprite = myState.sprite;
         myState.idx = idx;
     }
-
-    private void GetDamage()
+    private void SetMyState()
     {
-        myState.nowHP--;
+        int stageNum = GameManager.Instance.GetStageNum();
+        myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum-1);
+        myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
+        myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
+        int ran = Random.Range(0, 5);
+        if (ran == 0)
+            myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum);
+        else
+            myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
+
+        mySpriteRenderer.sprite = myState.sprite;
+    }
+    private void GetDamage(int damage)
+    {
+        myState.nowHP-= damage;
         if (myState.nowHP <= 0)
         {
             diceWeapon.SetFirstObstacleIndex(myState.idx + 1);
             GameManager.Instance.AddPoints(myState.exp);
-
 
             myPool.EnqueuePool(gameObject);
         }

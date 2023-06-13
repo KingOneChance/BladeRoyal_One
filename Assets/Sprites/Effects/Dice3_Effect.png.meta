@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3ed164fec4bc20247b2ad8611bd17171
+guid: 93b91df97c20aec458cd0b9e3597b031
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,22 +141,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obstacles_logs_0
+      name: Dice3_Effect_0
       rect:
         serializedVersion: 2
-        x: 19
-        y: 24
-        width: 374
-        height: 78
+        x: 0
+        y: 227
+        width: 204
+        height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 504a45931ecea19448b7b59fdfb01614
-      internalID: 2023266601
+      spriteID: 605bbe592bdc16c439eb4832abae8f06
+      internalID: -1410130711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice3_Effect_1
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 216
+        width: 197
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80907e2885a6404a847b876d5bedcf3
+      internalID: 1794953948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice3_Effect_2
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 212
+        width: 154
+        height: 196
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e3bc314aaec7ec4e94e18de1d884033
+      internalID: 399072656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice3_Effect_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 207
+        height: 191
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaff2d8af1df50c4980e8c9a31439026
+      internalID: -1839744737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice3_Effect_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 209
+        height: 187
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 690f123cbe26b1247b1cbf7093c6d5b4
+      internalID: 438062391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dice3_Effect_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 0
+        width: 162
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db5c33166042d1b4b93857abe35e9e08
+      internalID: 962847446
       vertices: []
       indices: 
       edges: []
@@ -172,7 +277,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Obstacles_logs_0: 2023266601
+      Dice3_Effect_0: -1410130711
+      Dice3_Effect_1: 1794953948
+      Dice3_Effect_2: 399072656
+      Dice3_Effect_3: -368657412
+      Dice3_Effect_4: -1839744737
+      Dice3_Effect_5: 438062391
+      Dice3_Effect_6: 711108336
+      Dice3_Effect_7: 962847446
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

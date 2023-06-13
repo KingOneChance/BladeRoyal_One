@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
     #region Player Actions About Attack, Defence ...add some
     public void OnClick_Attack()
     {
-        if (!canAttack || keepDeffence) return;
+        if (keepDeffence) return;
         canAttack = false;
         int ran = Random.Range(0, 2);
         if(ran==0) myAnimator.SetTrigger("Attack1");

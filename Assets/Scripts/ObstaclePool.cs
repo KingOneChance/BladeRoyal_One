@@ -10,9 +10,10 @@ public class ObstaclePool : MonoBehaviour
     [SerializeField] private Transform poolfolder;
     [SerializeField] private PlayerController myPlayer;
 
-
     [SerializeField] private int poolNum = 0;
     [SerializeField] private int stage = 0;
+
+    [SerializeField] private int waveCount = 0;
     private void Awake()
     {
         pool = new Queue<GameObject>();
@@ -42,6 +43,12 @@ public class ObstaclePool : MonoBehaviour
     }
     private void DropPool()
     {
+        waveCount++;
+        if (waveCount >= AllConst.waveNum)
+        {
+            GameManager.Instance.StageUp();
+            waveCount = 0;
+        }
         for (int i = 0; i < poolNum; i++)
         {
             GameObject obj = pool.Dequeue();

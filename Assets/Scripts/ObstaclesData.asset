@@ -13,7 +13,16 @@ MonoBehaviour:
   m_Name: ObstaclesData
   m_EditorClassIdentifier: 
   maxHp: 01000000020000000400000008000000100000002000000040000000800000000001000000020000
+  exp: 0a000000140000001e00000028000000320000003c00000046000000500000005a00000064000000
   textures:
   - {fileID: 2800000, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
+  - {fileID: 2800000, guid: 1752e7d0ad5acd6448db39dbac56ff8e, type: 3}
+  - {fileID: 2800000, guid: 756f01e8a7ff1fa4d95aa5c8111d1ca0, type: 3}
+  - {fileID: 2800000, guid: 1e1458dc05430be47b23740c3f22a27c, type: 3}
+  - {fileID: 2800000, guid: 39feec96f83c10f48ae96036dd2e59b7, type: 3}
   sprites:
   - {fileID: 2023266601, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
+  - {fileID: 21300000, guid: 1752e7d0ad5acd6448db39dbac56ff8e, type: 3}
+  - {fileID: 21300000, guid: 756f01e8a7ff1fa4d95aa5c8111d1ca0, type: 3}
+  - {fileID: 21300000, guid: 1e1458dc05430be47b23740c3f22a27c, type: 3}
+  - {fileID: 21300000, guid: 39feec96f83c10f48ae96036dd2e59b7, type: 3}
