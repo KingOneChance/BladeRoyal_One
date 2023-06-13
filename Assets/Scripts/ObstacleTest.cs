@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ObstacleTest : MonoBehaviour
 {
-    Rigidbody2D rigidbody2D = null;
     BoxCollider2D boxCollider2D = null;
+
+    
+
     private void Awake()
     {
-        TryGetComponent<Rigidbody2D>(out rigidbody2D);
         TryGetComponent<BoxCollider2D>(out boxCollider2D);
-        if (rigidbody2D == null) Debug.LogError("Obstacle has any rigidbody2D");
         if (boxCollider2D == null) Debug.LogError("Obstacle has any rigidbody2D");
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -22,8 +22,6 @@ public class ObstacleTest : MonoBehaviour
         if(collision.collider.tag =="Ground")
         {
             Debug.Log("¹Ù´Ú¿¡ ´êÀ½ , ÄÝ¸®Àü");
-
-            rigidbody2D.gravityScale = 0;
         }
     }
     private void OnCollisionStay2D(Collision2D collision)
@@ -37,12 +35,6 @@ public class ObstacleTest : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Ground")
-        {
-            Debug.Log("¹Ù´Ú¿¡ ´êÀ½ , Æ®¸®°Å");
-            rigidbody2D.mass = 0;
-            rigidbody2D.gravityScale = 0;
-        }
+        
     }
-  
 }
