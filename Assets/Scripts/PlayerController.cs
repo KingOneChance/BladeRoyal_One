@@ -14,24 +14,27 @@ public class MyRigidBody
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private MyRigidBody myRigidBody;
 
-    [Header("====Player StatCheck")]
+    [Header("====Player StateCheck")]
     [SerializeField] private bool isGround = false;
     [SerializeField] private bool isFalling = true;
     [SerializeField] private bool canAttack = true;
     [SerializeField] private bool canDeffence = true;
+    [SerializeField] private bool keepDeffence = false;
     [SerializeField] private bool canJumpSkill = true;
     [SerializeField] private bool canAttackSkill = true;
-   
+
     [Header("====Player Value")]
     [SerializeField] private float bottomHeight;
     [SerializeField] private float playerHeight;
     [SerializeField] private float attackCoolTime = 0.5f;
     [SerializeField] private float DefenceCoolTime = 2;
 
-    [Header("====Player Value")]
-    [SerializeField] private int hearts = 3;
+    [Header("====Player Tools")]
+    [SerializeField] private MyRigidBody myRigidBody = null;
+    [SerializeField] private Animator myAnimator = null;
+    [SerializeField] private GameObject weaponHitBox = null;
+    [SerializeField] private GameObject shieldHitBox = null;
 
     private void Start()
     {
@@ -43,10 +46,10 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("트리거 엔터");
         if (collision.tag == "Ground")
         {
             isGround = true;
+            gameObject.tag = "GroundPlayer";
         }
         switch (collision.tag)
         {
@@ -66,8 +69,12 @@ public class PlayerController : MonoBehaviour
         if (!isGround) return;
         isGround = false;
         isFalling = false;
+        gameObject.tag = "Player";
         myRigidBody.velocity = myRigidBody.initJumpVelocity;
         StartCoroutine(Co_ForcedGravity()); //플레이어 중력
+        
+        //점프 애니메이션
+        myAnimator.SetTrigger("Jump");
     }
     //캐싱해두기
     WaitForFixedUpdate waitFixedUpdate = new WaitForFixedUpdate();
@@ -103,18 +110,30 @@ public class PlayerController : MonoBehaviour
     #region Player Actions About Attack, Defence ...add some
     public void OnClick_Attack()
     {
-        if (!canAttack || !canDeffence) return;
-        Debug.Log("공격");
+        if (!canAttack || keepDeffence) return;
         canAttack = false;
-        StartCoroutine(Co_ActionCoolTime(attackCoolTime, "Attack"));
+        int ran = Random.Range(0, 2);
+        if(ran==0) myAnimator.SetTrigger("Attack1");
+        else myAnimator.SetTrigger("Attack2");
+        weaponHitBox.SetActive(true);
+        StartCoroutine(Co_ActionCoolTime(attackCoolTime, "Attack",weaponHitBox));
     }
     public void OnClick_Deffence()
     {
         if (!canDeffence) return;
-        Debug.Log("방어");
         canDeffence = false;
-        StartCoroutine(Co_ActionCoolTime(DefenceCoolTime, "Deffence"));
-        //animator.SetTrriger("Deffence",true);
+        keepDeffence = true;
+        myAnimator.SetTrigger("Deffence");
+        shieldHitBox.SetActive(true);
+        StartCoroutine(Co_ActionCoolTime(DefenceCoolTime, "Deffence",shieldHitBox));
+        StartCoroutine(Co_KeepTimer(shieldHitBox));
+    }
+    WaitForSeconds keepTime = new WaitForSeconds(1f);
+    IEnumerator Co_KeepTimer(GameObject hitBox)
+    {
+        yield return keepTime;
+        keepDeffence = false;
+        hitBox.SetActive(false);
     }
     /// <summary>
     /// 어떤 행동인지에 따라 체크할 코루틴 : actionCool = 특정 액션의 설정된 쿨타임, canUse = 특정 액션 쿨타임 상태값,
@@ -122,9 +141,9 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     /// <param name="actionCool"></param>
     /// <param name="canUse"></param>
-    /// <param name="testName"></param>
+    /// <param name="actionName"></param>
     /// <returns></returns>
-    IEnumerator Co_ActionCoolTime(float actionCool, string testName = "TestName")
+    IEnumerator Co_ActionCoolTime(float actionCool, string actionName,GameObject hitBox)
     {
         float timer = 0;
         while (timer < actionCool)
@@ -132,9 +151,10 @@ public class PlayerController : MonoBehaviour
             yield return null;
             timer += Time.deltaTime;
         }
-        if (testName.CompareTo("Attack") == 0)
+        if (actionName.CompareTo("Attack") == 0)
         {
             canAttack = true;
+            hitBox.SetActive(false);
         }
         else
         {
@@ -142,4 +162,10 @@ public class PlayerController : MonoBehaviour
         }
     }
     #endregion
+
+    public void SetInitEquipment()
+    {
+        weaponHitBox.SetActive(false);
+        shieldHitBox.SetActive(false);
+    }
 }

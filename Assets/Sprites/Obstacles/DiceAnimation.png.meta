@@ -1,0 +1,2667 @@
+fileFormatVersion: 2
+guid: f377263fdba088c42bf91f4b79b71879
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DiceAnimation_45
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 189
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef76565645d52a4d9ba2567e2d417e6
+      internalID: 1900048761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_46
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba870c47f25ba5348b214b6365878b39
+      internalID: -1561345266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_47
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 189
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e287e40d148be94e9d3baf2ccccfb0d
+      internalID: -1619322409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_48
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7c89e4ff2133940b1930dc3ca1cc86
+      internalID: 755217830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_49
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 189
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8565105d157494faf442e35ec26b2e
+      internalID: 1584402826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_50
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e290c05cd79921f488b3a8ba322e9c03
+      internalID: 33986136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_51
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 189
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1a4b36d21edd2e45b8d75d8bfa445d9
+      internalID: -803984436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_52
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301316f7d1895144ebaaee7372c33d04
+      internalID: -1855650949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_53
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 189
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e1853d7a8010244b255f18d7b3072b
+      internalID: -1092581499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_54
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1793a8872879d34fa28caf9a783acb6
+      internalID: -433373636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_55
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 189
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8270ea5f06a634bb32d7027a93c4ba
+      internalID: -1803017622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_56
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7538bae033f49e6499d8f6c241c864d7
+      internalID: 1058413433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_57
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 189
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7e58119f56ee44483e37567510896c
+      internalID: 1793012553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_58
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca82b0ff7ae3bc47a9a170b4a06ff0d
+      internalID: 1697542432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_59
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 189
+        width: 44
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236bcf629dbb7624c88d6664b42b5f43
+      internalID: 701419828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_60
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 189
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cd3750c4748acb48855de9e4a98ba7d
+      internalID: 1810831830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 372
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead25ffe4d4354741850af2808ce114b
+      internalID: -638913781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 322
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f862e7c3f43507348bb927c8f9cb045f
+      internalID: -1460818057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_2
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cabcff94ea124bf49b2e31cc05882637
+      internalID: -769574492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_4
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf6589a05cedc84ba2aa09c663e162d
+      internalID: -1989039686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_5
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 322
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3ee03fbc1a4474f91c42fbf34c1d81
+      internalID: -753781714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_6
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4bc6338cf9f554587b81bf83edaf6e
+      internalID: 2029182245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_8
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf476296a58af414d91aaeb37661e57e
+      internalID: -538560433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 322
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2141035b63c0dc4c9b1650dbf7b2748
+      internalID: -16594550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_10
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4abd007c34982a747a283ab9ccadd6f8
+      internalID: -307419327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_12
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2721341cba15745a3c2aae460ac766
+      internalID: 1179780917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_13
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 322
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d28ad19ea61fff0488e7cf9c1585dffc
+      internalID: 2007183996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_14
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d509ad855c9ffe542b2a95bb24dfac6f
+      internalID: 768452754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_16
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 321
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e73f6f7d1383a147b48a750d5fd1ec6
+      internalID: 1788031041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_17
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 276
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b72bf8472430629409484d7b596c2d75
+      internalID: -459979169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_18
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56d157037b656e49ab39505bc163528
+      internalID: 854807676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_19
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38ac44cb2d4f96b4ca8f9a2a8b89599d
+      internalID: -755500131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_20
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 276
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a75c472c482d5b4da67c9fd1d81083f
+      internalID: 397151908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_21
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f96d3d76baec4743840421df22c0a71
+      internalID: 2144775878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_22
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 276
+        width: 40
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9478c35dc409544bdaac2d7eb19cce
+      internalID: -971942740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_23
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 276
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d56eca488e7ed443b03fdd6babc2140
+      internalID: -1989984332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_24
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab5171c81e9ac254da73e3c65594eaae
+      internalID: 477406997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_25
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9f6444dab274a498aa709c1d6f93dc
+      internalID: 639745548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_26
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 276
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd8daa2fefcc12499352d82fdce74bb
+      internalID: 121287249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_27
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5d99638a8698b41b58cfc1e0cd5376
+      internalID: 131751220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_28
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 276
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c164e4041f2156a40b97f4f889c7e9f4
+      internalID: 1780240540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_29
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 233
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae6567f58014f043bd8d5f539d2d502
+      internalID: 1847851635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5434c5e1410e20749bbd5417637dde32
+      internalID: -1019560599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_31
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 231
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6348fc5db8fd9a44a5512294c3f9eef
+      internalID: 518105256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_32
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 232
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dca874e9634311c43932f4746b6b790e
+      internalID: -1720484115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_33
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 233
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd7925a5cd32ea42a33f584c4c80eaa
+      internalID: 527726349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_34
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb62c5fc793e6904f8429073133c7f54
+      internalID: -1515169426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_35
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 231
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e0a69d20110894f86f31985b3fa8ed
+      internalID: -2103063171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_36
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7504e674b9056469df505e43801dae
+      internalID: -770388273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_37
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 233
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9588dcf1f293b4a8649a315501ddc0
+      internalID: -4514468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_38
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07e96e6aeb06d8c40a1a8fceac477e18
+      internalID: -2047471602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_39
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 231
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f6694232edbc284e91bf458ecc495b0
+      internalID: 373102782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_40
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0d1fd45ec820b4e97dcef06dea5612
+      internalID: -1214221547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_41
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 233
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a9cfa429bfc3d4fb354cdbb59848c0
+      internalID: -1731613551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_42
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 232
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70483372640d13d40b5f3c24b76851e5
+      internalID: -1999144271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_43
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 231
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8adea2f1e85026428a4d5af4a29d46c
+      internalID: 1508263560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_44
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 232
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c86f61775a294d40869eb3c302025c7
+      internalID: -1557463574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_61
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 141
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d70869bda071c44a9c26677b9c34e3
+      internalID: 966692725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_62
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd426126bf074354381b72a31883251d
+      internalID: 1664117026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_63
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 142
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4aaf4040fc7d742ac29a53b81706fb
+      internalID: -854206644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_64
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 141
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95d4028911cb0142ac5cc98f1517681
+      internalID: -1816964102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_65
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 141
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2af3c3d24fa4044998c8e235df45c6
+      internalID: -1163860047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_66
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41acc565a3cb3b540918e75ec16f40c1
+      internalID: -372203802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_67
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 142
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e41c2bf3b58494d876fceba5eceb78
+      internalID: -108382870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_68
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 141
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5f21edf67535d43965807b8bef136c
+      internalID: -584977542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_69
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 141
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf31ff772b477e4eb0e3c7f1ad22e66
+      internalID: 1376069731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_70
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45b7fd26d8f52664fb3d24750be53a5d
+      internalID: 440541618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_71
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 142
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eee97183891337a4c8247bb828dafecc
+      internalID: -934855434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_72
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1df5365f5aed6246b35314378b17850
+      internalID: 1853576595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_73
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 141
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550faa56655ba2c4fa6a00e7142e6dbe
+      internalID: -1639777746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_74
+      rect:
+        serializedVersion: 2
+        x: 602
+        y: 140
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98712c2ffc061549a08d4c9a2b127e4
+      internalID: 1463853050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_75
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 142
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0b3bc3936971b4e847fb0ed3215501
+      internalID: 1277855293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_76
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 141
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d1f49a170824e40b216ddc9a7df55d
+      internalID: -535038148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_77
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 93
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8902ad1fb7955b7449b409583b030bd2
+      internalID: -2092535370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_78
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c0445eac4d28f942a645681f62040bd
+      internalID: -1995185642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_80
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed13db41f33565e4eb9fdb68d84550d5
+      internalID: 1377149355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_81
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 93
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fff18d1dc6c8174792bdd3f56aa9ace
+      internalID: -1323355558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_82
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9046a3d9297de3342abb9f4d4bea0597
+      internalID: 448727083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_83
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 92
+        width: 43
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba47914d7ff70747b43a92dc60e92dc
+      internalID: -654852145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_84
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 93
+        width: 39
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9794728e46efe4da0189b72dde4ced
+      internalID: 1957144319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_85
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 93
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3355d092ad702af47bb055bd7085df0e
+      internalID: 308458778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_86
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaf70ffd9ce8264b9f81596b1fb92da
+      internalID: -1440231972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_88
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 666252d3bbbcc1c4aa40a4d73d83e89d
+      internalID: 2099506902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_89
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 93
+        width: 36
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2b0e3f57e0f03448eb208c899dc188
+      internalID: -83295781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_90
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c98d363732f4d4d96180bbd140bd14
+      internalID: 1611349569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_92
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 93
+        width: 39
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9817d6d0e0f6a4e4cb3a90d853507eea
+      internalID: -1875024209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_93
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 50
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6863a04dd43b8734bb9a187708f5d394
+      internalID: -1036702081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_94
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da212dd90f59ad941be1f348f2be98ab
+      internalID: -2145134454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_95
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77621232764c37b4ea692ce45a4d3a85
+      internalID: -1632784088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_96
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 50
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fe2c8929c912e842a1f2b5314b01257
+      internalID: -92590140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_97
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db09de89f4d3006418826848b1c1a5c0
+      internalID: -71440620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_98
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 46
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa3893b91b34f844fbda821977a90001
+      internalID: 324697036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_99
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3999d96e78ae2b47812c081d064d8eb
+      internalID: 1601258841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_100
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 50
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea12f61a0b2b8bc4cb08067124aabd97
+      internalID: -363402122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_101
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5766a25cd03cc3441add1df62cdb6cea
+      internalID: 1391055736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_102
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ad22618716449b4da23a322453b85d2
+      internalID: 1209225711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_103
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 50
+        width: 36
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7861b620500262a4094e582578c13401
+      internalID: 17215464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_104
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0ec77f755d97984ca60c4d0637e321a
+      internalID: 523056504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_105
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 45
+        width: 40
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225387cb9e9d26646be149317014fa52
+      internalID: 1554889031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_106
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 5
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ab1947343b39274e841baf023df6111
+      internalID: 996731230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_3
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 321
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb72929e2d34c5f4aaad30f28be288a6
+      internalID: 326897169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_107
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 273
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee887c179c68ae848ad0b94fb03dbe2e
+      internalID: -167929614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_79
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 93
+        width: 41
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb867186c37cd2d44a7f57c85cf7265c
+      internalID: -1407818525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_108
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 47
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850475dd85002494691b6cd96daaac38
+      internalID: -1297698456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_7
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 321
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dddb9c3e1d0dc4418f6bdbd8cc52854
+      internalID: 716602344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_109
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 276
+        width: 42
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1df96a7bf683c2548b344681cde78b27
+      internalID: -456262122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_11
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 322
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d456621dbd2c45c479b490d2cf202c32
+      internalID: 139066210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_110
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 277
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edc6b7396eac8941b3f1ac74232ac87
+      internalID: 708330568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_87
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 92
+        width: 47
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28f8f5c7798eeb24c827725b2be30125
+      internalID: -28939367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_111
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 45
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9a8a5b60802dd4d8e9d14205b04114
+      internalID: -485550559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_15
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 322
+        width: 43
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba42baed9a718a04a82b266b81af6e77
+      internalID: -1870369638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_112
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 276
+        width: 46
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabcda0c57bb9714ebd0de52629e98c1
+      internalID: 804357894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_91
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 93
+        width: 43
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6047363d967ed754eb3c3aa9416b0c80
+      internalID: 1265268883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiceAnimation_113
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 47
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 208ea4ce37af28d47b2b7683488553cd
+      internalID: 562509950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      DiceAnimation_0: -638913781
+      DiceAnimation_1: -1460818057
+      DiceAnimation_10: -307419327
+      DiceAnimation_100: -363402122
+      DiceAnimation_101: 1391055736
+      DiceAnimation_102: 1209225711
+      DiceAnimation_103: 17215464
+      DiceAnimation_104: 523056504
+      DiceAnimation_105: 1554889031
+      DiceAnimation_106: 996731230
+      DiceAnimation_107: -167929614
+      DiceAnimation_108: -1297698456
+      DiceAnimation_109: -456262122
+      DiceAnimation_11: 139066210
+      DiceAnimation_110: 708330568
+      DiceAnimation_111: -485550559
+      DiceAnimation_112: 804357894
+      DiceAnimation_113: 562509950
+      DiceAnimation_12: 1179780917
+      DiceAnimation_13: 2007183996
+      DiceAnimation_14: 768452754
+      DiceAnimation_15: -1870369638
+      DiceAnimation_16: 1788031041
+      DiceAnimation_17: -459979169
+      DiceAnimation_18: 854807676
+      DiceAnimation_19: -755500131
+      DiceAnimation_2: -769574492
+      DiceAnimation_20: 397151908
+      DiceAnimation_21: 2144775878
+      DiceAnimation_22: -971942740
+      DiceAnimation_23: -1989984332
+      DiceAnimation_24: 477406997
+      DiceAnimation_25: 639745548
+      DiceAnimation_26: 121287249
+      DiceAnimation_27: 131751220
+      DiceAnimation_28: 1780240540
+      DiceAnimation_29: 1847851635
+      DiceAnimation_3: 326897169
+      DiceAnimation_30: -1019560599
+      DiceAnimation_31: 518105256
+      DiceAnimation_32: -1720484115
+      DiceAnimation_33: 527726349
+      DiceAnimation_34: -1515169426
+      DiceAnimation_35: -2103063171
+      DiceAnimation_36: -770388273
+      DiceAnimation_37: -4514468
+      DiceAnimation_38: -2047471602
+      DiceAnimation_39: 373102782
+      DiceAnimation_4: -1989039686
+      DiceAnimation_40: -1214221547
+      DiceAnimation_41: -1731613551
+      DiceAnimation_42: -1999144271
+      DiceAnimation_43: 1508263560
+      DiceAnimation_44: -1557463574
+      DiceAnimation_45: 1900048761
+      DiceAnimation_46: -1561345266
+      DiceAnimation_47: -1619322409
+      DiceAnimation_48: 755217830
+      DiceAnimation_49: 1584402826
+      DiceAnimation_5: -753781714
+      DiceAnimation_50: 33986136
+      DiceAnimation_51: -803984436
+      DiceAnimation_52: -1855650949
+      DiceAnimation_53: -1092581499
+      DiceAnimation_54: -433373636
+      DiceAnimation_55: -1803017622
+      DiceAnimation_56: 1058413433
+      DiceAnimation_57: 1793012553
+      DiceAnimation_58: 1697542432
+      DiceAnimation_59: 701419828
+      DiceAnimation_6: 2029182245
+      DiceAnimation_60: 1810831830
+      DiceAnimation_61: 966692725
+      DiceAnimation_62: 1664117026
+      DiceAnimation_63: -854206644
+      DiceAnimation_64: -1816964102
+      DiceAnimation_65: -1163860047
+      DiceAnimation_66: -372203802
+      DiceAnimation_67: -108382870
+      DiceAnimation_68: -584977542
+      DiceAnimation_69: 1376069731
+      DiceAnimation_7: 716602344
+      DiceAnimation_70: 440541618
+      DiceAnimation_71: -934855434
+      DiceAnimation_72: 1853576595
+      DiceAnimation_73: -1639777746
+      DiceAnimation_74: 1463853050
+      DiceAnimation_75: 1277855293
+      DiceAnimation_76: -535038148
+      DiceAnimation_77: -2092535370
+      DiceAnimation_78: -1995185642
+      DiceAnimation_79: -1407818525
+      DiceAnimation_8: -538560433
+      DiceAnimation_80: 1377149355
+      DiceAnimation_81: -1323355558
+      DiceAnimation_82: 448727083
+      DiceAnimation_83: -654852145
+      DiceAnimation_84: 1957144319
+      DiceAnimation_85: 308458778
+      DiceAnimation_86: -1440231972
+      DiceAnimation_87: -28939367
+      DiceAnimation_88: 2099506902
+      DiceAnimation_89: -83295781
+      DiceAnimation_9: -16594550
+      DiceAnimation_90: 1611349569
+      DiceAnimation_91: 1265268883
+      DiceAnimation_92: -1875024209
+      DiceAnimation_93: -1036702081
+      DiceAnimation_94: -2145134454
+      DiceAnimation_95: -1632784088
+      DiceAnimation_96: -92590140
+      DiceAnimation_97: -71440620
+      DiceAnimation_98: 324697036
+      DiceAnimation_99: 1601258841
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

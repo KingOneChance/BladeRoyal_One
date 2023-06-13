@@ -10,7 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0023b8f84eca2ed459a3a3e22e126e42, type: 3}
-  m_Name: ObstaclesTextureData
+  m_Name: ObstaclesData
   m_EditorClassIdentifier: 
-  textures: []
-  sprites: []
+  maxHp: 01000000020000000400000008000000100000002000000040000000800000000001000000020000
+  textures:
+  - {fileID: 2800000, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
+  sprites:
+  - {fileID: 2023266601, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
