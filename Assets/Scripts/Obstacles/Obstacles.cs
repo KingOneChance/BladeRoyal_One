@@ -10,6 +10,7 @@ public class ObstacleState
     public uint exp;
     public int idx;
     public Sprite sprite;
+    public bool isBoss = false;
 }
 public class Obstacles : MonoBehaviour
 {
@@ -81,16 +82,20 @@ public class Obstacles : MonoBehaviour
     private void SetMyState()
     {
         int stageNum = GameManager.Instance.GetStageNum();
-        if (stageNum == 5)
+        if (stageNum == AllConst.stageNum)
         {
             //보스 호출 후 리턴   
             if (myState.idx == 0)
             {
+                GameManager.Instance.SetBossStage();
+                myState.isBoss = true;
                 myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
                 myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
                 myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
                 myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
                 mySpriteRenderer.sprite = myState.sprite;
+                UI_Manager.SetMaxHP(myState.maxHP); //max hp바 세팅
+                UI_Manager.SetHPBar(myState.nowHP); //현재 hp바 세팅
             }
             else
             {
@@ -101,14 +106,19 @@ public class Obstacles : MonoBehaviour
         myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
-
-
-        int ran = Random.Range(0, 5);
-        if (ran == 0)
-            myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum);
+       
+        if (stageNum < AllConst.stageNum-1)
+        {
+            int ran = Random.Range(0, 5); //확률
+            if (ran == 0)
+                myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum);
+            else
+                myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
+        }
         else
+        {
             myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
-
+        }
         mySpriteRenderer.sprite = myState.sprite;
     }
     private void GetDamage(int damage)
@@ -116,11 +126,15 @@ public class Obstacles : MonoBehaviour
         myState.nowHP -= damage;
         if (myState.nowHP <= 0)
         {
+            if (myState.isBoss == true)
+            {
+                GameManager.Instance.StageClear();
+                return;
+            }
             UI_Manager.SetHPBar(myState.maxHP); //죽고나면 초기화 세팅
             weaponsHitBox.SetFirstObstacleIndex(myState.idx + 1);
             GameManager.Instance.AddPoints(myState.exp);
             GameManager.Instance.AddAttackCount(); //공격스킬 카운트
-            
             myPool.EnqueuePool(gameObject);
         }
         else

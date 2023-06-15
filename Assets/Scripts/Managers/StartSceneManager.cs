@@ -31,6 +31,7 @@ public class StartSceneManager : MonoBehaviour
     private void Start()
     {
         stages[0].interactable = true;
+        SoundsMananager.Instance.StartSceneBGM();
         //끊임없이 회전
         StartCoroutine(Co_MoveDiceImage(dice1MoveX, dice1MoveY, moveDice1Freq, moveDice1));
         StartCoroutine(Co_MoveDiceImage(dice2MoveX, dice2MoveY, moveDice1Freq, moveDice2));

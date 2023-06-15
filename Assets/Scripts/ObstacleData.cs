@@ -23,5 +23,4 @@ public class ObstacleData : ScriptableObject
             exp[i] = exp[i - 1] + 10;
         }
     }
-
 }

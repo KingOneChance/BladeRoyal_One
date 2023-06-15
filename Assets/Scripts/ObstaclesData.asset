@@ -7,22 +7,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0023b8f84eca2ed459a3a3e22e126e42, type: 3}
   m_Name: ObstaclesData
   m_EditorClassIdentifier: 
-  maxHp: 0100000002000000040000000800000010000000
-  exp: 0a000000140000001e0000002800000032000000
+  maxHp: 01000000020000000400000008000000100000002000000040000000
+  exp: 0a000000140000001e00000028000000320000003c00000046000000
   textures:
   - {fileID: 2800000, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
   - {fileID: 2800000, guid: 1752e7d0ad5acd6448db39dbac56ff8e, type: 3}
   - {fileID: 2800000, guid: 756f01e8a7ff1fa4d95aa5c8111d1ca0, type: 3}
   - {fileID: 2800000, guid: 1e1458dc05430be47b23740c3f22a27c, type: 3}
   - {fileID: 2800000, guid: 39feec96f83c10f48ae96036dd2e59b7, type: 3}
+  - {fileID: 2800000, guid: 59e5b575d9d20d44abd9bee9bae38798, type: 3}
+  - {fileID: 2800000, guid: c4f85f6b76c6b5545a792c85c0d04460, type: 3}
   sprites:
   - {fileID: 2023266601, guid: 3ed164fec4bc20247b2ad8611bd17171, type: 3}
   - {fileID: 21300000, guid: 1752e7d0ad5acd6448db39dbac56ff8e, type: 3}
   - {fileID: 21300000, guid: 756f01e8a7ff1fa4d95aa5c8111d1ca0, type: 3}
   - {fileID: 21300000, guid: 1e1458dc05430be47b23740c3f22a27c, type: 3}
   - {fileID: 21300000, guid: 39feec96f83c10f48ae96036dd2e59b7, type: 3}
+  - {fileID: 21300000, guid: 59e5b575d9d20d44abd9bee9bae38798, type: 3}
+  - {fileID: 21300000, guid: c4f85f6b76c6b5545a792c85c0d04460, type: 3}

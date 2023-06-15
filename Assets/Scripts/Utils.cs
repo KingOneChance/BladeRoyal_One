@@ -6,10 +6,10 @@ public class Utils { }
 public static class AllConst
 {
     public const int poolingNum = 6;
-    public const int stageNum = 6;
+    public const int stageNum = 7;
     public const int waveNum = 2;
     public const int rigidFallingSpeed = -10;
-    public const int rigidImpactSpeed = -5;
+    public const int rigidImpactSpeed = -2;
     public const uint jumpSkillCount = 5;
     public const uint attackSkillCount = 10;
     public const float jumpSkillKeepTime = 0.5f;

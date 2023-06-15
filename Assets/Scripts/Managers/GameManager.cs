@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private uint combo = 0;
 
     [Header("====GameScene")]
+    [SerializeField] private int mapStage = -1;
     [SerializeField] private uint points = 0;
     [SerializeField] private int nowStage = 0;
     [SerializeField] private int hearts = 3;
@@ -42,6 +43,13 @@ public class GameManager : MonoBehaviour
     [Header("====UI Component")]
     [SerializeField] private GameSceneUiManager Ui_Manager = null;
     [SerializeField] private TextMeshProUGUI comboText = null;
+
+    public void StartSceneSetting()
+    {
+        mapStage = -1;
+    }
+    public void SetMapStageNum(int num) => mapStage = num;
+    public int GetMapStageNum() => mapStage;
 
     /// <summary>
     /// 클래스화 시켜서 가독성 높이도록 수정 필요
@@ -151,4 +159,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void StageUp() => nowStage++;
     public int GetStageNum() => nowStage;
+    public void SetBossStage() => Ui_Manager.SetBossStage();
+    public void StageClear() => Ui_Manager.StageClear();
+    public void DeffenceCoolTime(float time) => Ui_Manager.SetDeffenceTimer(time);
 }

@@ -26,9 +26,9 @@ public class PlayerInput : MonoBehaviour
     }
     public bool CanUseJumpSkill()
     {
-        if (beginPosition.y > 60 && endPosition.y < 670) //스킬 y 공통범위
+        if (beginPosition.y < 700 && beginPosition.y > 60 && endPosition.y > beginPosition.y) //스킬 y 공통범위
         {
-            if (beginPosition.x > 60 && endPosition.x < 360)// 점프 스킬 x범위
+            if (beginPosition.x < 360 && beginPosition.x > 60 && endPosition.x < 360 && endPosition.x > 60)// 점프 스킬 x범위
             {
                 if (Vector2.Distance(beginPosition, endPosition) > 300) //드래그 범위 길이 이상
                 {
@@ -40,9 +40,9 @@ public class PlayerInput : MonoBehaviour
     }
     public bool CanUseAttackSkill()
     {
-        if (beginPosition.y > 60 && endPosition.y < 670) //스킬 y 공통범위
+        if (beginPosition.y < 700 && beginPosition.y > 60 && endPosition.y > beginPosition.y) //스킬 y 공통범위
         {
-            if (beginPosition.x > 740 && endPosition.x < 1040)// 공격 스킬 x범위
+            if (beginPosition.x < 1040 && beginPosition.x > 740 && endPosition.x < 1040 && endPosition.x > 740)
             {
                 if (Vector2.Distance(beginPosition, endPosition) > 300) //드래그 범위 길이 이상
                 {

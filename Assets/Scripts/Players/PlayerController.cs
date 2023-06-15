@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             isGround = true;
             gameObject.tag = "GroundPlayer";
+            transform.position = new Vector2(0, bottomHeight + playerHeight * 0.5f);
         }
         switch (collision.tag)
         {
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
     #region Player Jump
     public void ReversAccSet(float vel)
     {
+        if (tag == "GroundPlayer") return;
         myRigidBody.velocity = vel;
     }
     public void OnTouch_Ground()
@@ -122,7 +124,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        transform.position = new Vector2(0, bottomHeight + playerHeight * 0.5f);
     }
     #endregion
 
@@ -146,6 +147,7 @@ public class PlayerController : MonoBehaviour
     public void OnClick_Deffence()
     {
         if (!canDeffence) return;
+        GameManager.Instance.DeffenceCoolTime(defenceCoolTime);
         canDeffence = false;
         keepDeffence = true;
         myAnimator.SetTrigger("Deffence");
