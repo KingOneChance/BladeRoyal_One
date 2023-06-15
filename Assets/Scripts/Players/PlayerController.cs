@@ -56,6 +56,7 @@ public class PlayerController : MonoBehaviour
             isGround = true;
             gameObject.tag = "GroundPlayer";
             transform.position = new Vector2(0, bottomHeight + playerHeight * 0.5f);
+            SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.Randing);
         }
         switch (collision.tag)
         {
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour
         jumpImpactBox.SetActive(true);
         gameObject.tag = "Player";
         myRigidBody.velocity = myRigidBody.initJumpVelocity;
+        SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.Jump);
         GameManager.Instance.AddJumpCount(); //점프스킬 카운트
         StartCoroutine(Co_ForcedGravity(myRigidBody.jumpForce)); //플레이어 중력
 
@@ -150,6 +152,7 @@ public class PlayerController : MonoBehaviour
         GameManager.Instance.DeffenceCoolTime(defenceCoolTime);
         canDeffence = false;
         keepDeffence = true;
+        SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.Sheild);
         myAnimator.SetTrigger("Deffence");
         shieldHitBox.SetActive(true);
         StartCoroutine(Co_ActionCoolTime(defenceCoolTime, "Deffence", shieldHitBox));
@@ -212,9 +215,11 @@ public class PlayerController : MonoBehaviour
 
         myRigidBody.velocity = myRigidBody.initJumpVelocity;
         GameManager.Instance.ResetJumpCount(); //점프스킬 카운트
-        StartCoroutine(Co_ForcedGravity(AllConst.skillJumpVelocity)); //플레이어 중력
 
         //사운드 켜기
+        SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.JumpSkill);
+       
+        StartCoroutine(Co_ForcedGravity(AllConst.skillJumpVelocity)); //플레이어 중력
     }
     IEnumerator Co_SetJumpAnimation()
     {
@@ -231,9 +236,11 @@ public class PlayerController : MonoBehaviour
         //애니메이션 켜기 , 데미지 증가
         //보조 무기 활성화
         StartAttackAnimation();
-        StartCoroutine(Co_SetAttackAnimation());
-
+        
         //사운드 켜기
+        SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.AttackSkill);
+        
+        StartCoroutine(Co_SetAttackAnimation());
     }
     IEnumerator Co_SetAttackAnimation()
     {

@@ -19,12 +19,18 @@ public class GameSceneUiManager : MonoBehaviour
     [SerializeField] private Slider deffenceCool = null;
     [SerializeField] private GameObject jumpArrow = null;
     [SerializeField] private GameObject attackArrow = null;
+    [SerializeField] private GameObject menuBox = null;
 
     [SerializeField] private float maxHP;
     private void Awake()
     {
         GameManager.Instance.GameSceneSetting();
+        SoundsMananager.Instance.TurnOnStageBGM() ;
     }
+    public void OnClick_CancelMenu() => menuBox.SetActive(false);
+    public void OnClick_Menu() => menuBox.SetActive(true);
+    public void GameExit() => Application.Quit();
+    public void ButtonSound() => SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.Button);
     public void SetDeffenceTimer(float time) => StartCoroutine(Co_CoolTime(time, deffenceCool));
     public void ShowJumpArrow(bool show) => jumpArrow.SetActive(show);
     public void ShowAttackArrow(bool show) => attackArrow.SetActive(show);
@@ -60,7 +66,6 @@ public class GameSceneUiManager : MonoBehaviour
         coolObj.gameObject.SetActive(false);
         coolObj.value = 0;
     }
-
     IEnumerator Co_ActiveTimer(float time, GameObject obj)
     {
         yield return new WaitForSeconds(time);

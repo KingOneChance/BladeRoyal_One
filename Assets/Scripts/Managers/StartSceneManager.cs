@@ -25,6 +25,8 @@ public class StartSceneManager : MonoBehaviour
         {
             DontDestroyOnLoad(Instantiate(gameManager));
         }
+        SoundsMananager.Instance.SetSoundSourceToDic();
+
         foreach (var button in stages)
             button.interactable = false;
     }
@@ -32,6 +34,7 @@ public class StartSceneManager : MonoBehaviour
     {
         stages[0].interactable = true;
         SoundsMananager.Instance.StartSceneBGM();
+
         //끊임없이 회전
         StartCoroutine(Co_MoveDiceImage(dice1MoveX, dice1MoveY, moveDice1Freq, moveDice1));
         StartCoroutine(Co_MoveDiceImage(dice2MoveX, dice2MoveY, moveDice1Freq, moveDice2));
@@ -57,4 +60,6 @@ public class StartSceneManager : MonoBehaviour
         }
         StartCoroutine(Co_MoveDiceImage(-x, -y, count, dice));
     }
+    public void PlayButtonSound() => SoundsMananager.Instance.TurnOnPlayerOnShot(EffectSoundType.Button);
+    public void SetMapStageNum(int num) => GameManager.Instance.SetMapStageNum(num);
 }

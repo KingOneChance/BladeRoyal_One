@@ -11,6 +11,7 @@ public class ObstacleState
     public int idx;
     public Sprite sprite;
     public bool isBoss = false;
+    public int enumyNum;
 }
 public class Obstacles : MonoBehaviour
 {
@@ -76,6 +77,7 @@ public class Obstacles : MonoBehaviour
         myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(0);
         mySpriteRenderer.sprite = myState.sprite;
         myState.idx = idx;
+        myState.enumyNum = 0;
         UI_Manager.SetMaxHP(myState.maxHP);
         UI_Manager.SetHPBar(myState.maxHP);
     }
@@ -94,6 +96,7 @@ public class Obstacles : MonoBehaviour
                 myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
                 myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
                 mySpriteRenderer.sprite = myState.sprite;
+                myState.enumyNum = stageNum - 1;
                 UI_Manager.SetMaxHP(myState.maxHP); //max hp바 세팅
                 UI_Manager.SetHPBar(myState.nowHP); //현재 hp바 세팅
             }
@@ -106,24 +109,31 @@ public class Obstacles : MonoBehaviour
         myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
-       
         if (stageNum < AllConst.stageNum-1)
         {
             int ran = Random.Range(0, 5); //확률
             if (ran == 0)
+            {
                 myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum);
+                myState.enumyNum = stageNum;
+            }
             else
+            {
                 myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
+                myState.enumyNum = stageNum - 1;
+            }
         }
         else
         {
             myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
+            myState.enumyNum = stageNum - 1;
         }
         mySpriteRenderer.sprite = myState.sprite;
     }
     private void GetDamage(int damage)
     {
         myState.nowHP -= damage;
+        SoundsMananager.Instance.TurnOnHitSounds(myState.enumyNum);
         if (myState.nowHP <= 0)
         {
             if (myState.isBoss == true)

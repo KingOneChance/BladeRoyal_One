@@ -54,6 +54,8 @@ public class PlayerInput : MonoBehaviour
     }
     private void Update()
     {
+
+#if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
             beginPosition = Input.mousePosition;
@@ -62,14 +64,18 @@ public class PlayerInput : MonoBehaviour
         {
             endPosition = Input.mousePosition;
         }
+#else
 
-
-        /*     if(Input.touchCount>0) //모바일일 경우 중복 터지 방지
-            {
-                Touch touch = Input.GetTouch(0);
+        if (Input.touchCount > 0) //모바일일 경우 중복 터지 방지
+        {
+            Touch touch = Input.GetTouch(0);
+            if (touch.phase == TouchPhase.Began)
                 beginPosition = touch.position;
-            }*/
+            if (touch.phase == TouchPhase.Ended)
+                endPosition = touch.position;
 
+        }
+#endif
 
         if (canJumpSkill == true && CanUseJumpSkill() == true)
         {

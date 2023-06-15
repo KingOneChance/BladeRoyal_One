@@ -48,6 +48,7 @@ MonoBehaviour:
   obstacleData: {fileID: 11400000, guid: f01eec056280b1146abaccdf038dd22b, type: 2}
   weaponHitBox: {fileID: 0}
   combo: 0
+  mapStage: -1
   points: 0
   nowStage: 1
   hearts: 3
@@ -69,7 +70,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 968bfe8a872654642a84b4bf17d92d06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MonsterDieSounds: []
-  MonsterHitSounds: []
-  startBgm: {fileID: 0}
-  stageBgm: []
+  MonsterHitSounds:
+  - {fileID: 8300000, guid: 01c4517839d617d43807d894f48ac849, type: 3}
+  - {fileID: 8300000, guid: c4505e76c7d83c44eb85c603f9212e78, type: 3}
+  - {fileID: 8300000, guid: e145a33f424bb3344ad253137aac6cd2, type: 3}
+  - {fileID: 8300000, guid: b915980f22fd3da4585427d59ce1d594, type: 3}
+  - {fileID: 8300000, guid: ce393d5804235584ebac0883688ab897, type: 3}
+  - {fileID: 8300000, guid: 007e3dfca45d8b44ba55a605e0bdc723, type: 3}
+  - {fileID: 8300000, guid: 2eb59d18c3937e14eb02a48576ac23e1, type: 3}
+  stageBgm:
+  - {fileID: 8300000, guid: c306992715fe8414db09a98a40439ffa, type: 3}
+  startBgm: {fileID: 8300000, guid: b4dddd161ec7c3d4fb229f6dc733ca11, type: 3}
+  jumpSound: {fileID: 8300000, guid: bbca4f10c9e664849b45a1d6d0ec698f, type: 3}
+  randingSound: {fileID: 8300000, guid: 61937dd8fd235ae42a26e570ae30dcdd, type: 3}
+  shieldSound: {fileID: 8300000, guid: d14ea33896e4d84448823ba7b05105e0, type: 3}
+  jumpSkillSound: {fileID: 8300000, guid: 15caa69e7cd62b949a1b622fc9c1eb6e, type: 3}
+  attackSkillSound: {fileID: 8300000, guid: 29f980a1f81cdd241a78da175f74ad41, type: 3}
+  buttonClickSount: {fileID: 8300000, guid: 632a9ae95eb223f43a04b360b9e4083f, type: 3}
