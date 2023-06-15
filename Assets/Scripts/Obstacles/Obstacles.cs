@@ -5,32 +5,37 @@ using UnityEngine;
 [System.Serializable]
 public class ObstacleState
 {
-    public double maxHP;
-    public double nowHP;
+    public float maxHP;
+    public float nowHP;
     public uint exp;
     public int idx;
     public Sprite sprite;
 }
 public class Obstacles : MonoBehaviour
 {
-    [SerializeField] private DiceWeapon diceWeapon = null;
+    [SerializeField] private WeaponHitBox weaponsHitBox = null;
     [SerializeField] private DiceShield diceShield = null;
     [SerializeField] private ObstaclePool myPool = null;
-
-    [SerializeField] private ObstacleState myState;
-    [SerializeField] private SpriteRenderer mySpriteRenderer;
+    [SerializeField] private GameSceneUiManager UI_Manager = null;
+    [SerializeField] private ObstacleState myState = null;
+    [SerializeField] private SpriteRenderer mySpriteRenderer = null;
     private void Awake()
     {
         TryGetComponent<SpriteRenderer>(out mySpriteRenderer);
         myState.nowHP = myState.maxHP;
-        diceWeapon = FindObjectOfType<DiceWeapon>();
+        weaponsHitBox = FindObjectOfType<WeaponHitBox>();
         diceShield = FindObjectOfType<DiceShield>();
-        diceWeapon.del_ColideAction += TakeAction;
+        UI_Manager = FindObjectOfType<GameSceneUiManager>();
+        weaponsHitBox.del_ColideAction += TakeAction;
     }
+
     private void OnEnable()
     {
-        if(GameManager.Instance.GetStageNum()>1)
+        if (GameManager.Instance.GetStageNum() > 1)
+        {
             SetMyState();
+            if (myState.idx == 0) UI_Manager.SetMaxHP(myState.maxHP);
+        }
     }
     private void Start()
     {
@@ -41,7 +46,7 @@ public class Obstacles : MonoBehaviour
         switch (collision.tag)
         {
             case "GroundPlayer": GameManager.Instance.DieHearts(); break;
-            case "Weapon": GetDamage(diceWeapon.GetDamageValue()); break;
+            case "JumpSkill": GetDamage(weaponsHitBox.GetDamageValue()*2); break;
         }
     }
     private void TakeAction(ColiderBox coliderBox, int idx)
@@ -50,7 +55,7 @@ public class Obstacles : MonoBehaviour
         switch (coliderBox)
         {
             case ColiderBox.Shield: ShieldAction(); break;
-            case ColiderBox.Weapon: GetDamage(diceWeapon.GetDamageValue()); break;
+            case ColiderBox.Weapon: GetDamage(weaponsHitBox.GetDamageValue()); break;
         }
     }
     /// <summary>
@@ -70,13 +75,34 @@ public class Obstacles : MonoBehaviour
         myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(0);
         mySpriteRenderer.sprite = myState.sprite;
         myState.idx = idx;
+        UI_Manager.SetMaxHP(myState.maxHP);
+        UI_Manager.SetHPBar(myState.maxHP);
     }
     private void SetMyState()
     {
         int stageNum = GameManager.Instance.GetStageNum();
-        myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum-1);
+        if (stageNum == 5)
+        {
+            //보스 호출 후 리턴   
+            if (myState.idx == 0)
+            {
+                myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
+                myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
+                myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
+                myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum - 1);
+                mySpriteRenderer.sprite = myState.sprite;
+            }
+            else
+            {
+                myPool.EnqueuePool(gameObject);
+            }
+            return; 
+        }
+        myState.maxHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.nowHP = GameManager.Instance.GetObstacleData().GetMaxHp(stageNum - 1);
         myState.exp = GameManager.Instance.GetObstacleData().GetExp(stageNum - 1);
+
+
         int ran = Random.Range(0, 5);
         if (ran == 0)
             myState.sprite = GameManager.Instance.GetObstacleData().GetSprite(stageNum);
@@ -87,13 +113,19 @@ public class Obstacles : MonoBehaviour
     }
     private void GetDamage(int damage)
     {
-        myState.nowHP-= damage;
+        myState.nowHP -= damage;
         if (myState.nowHP <= 0)
         {
-            diceWeapon.SetFirstObstacleIndex(myState.idx + 1);
+            UI_Manager.SetHPBar(myState.maxHP); //죽고나면 초기화 세팅
+            weaponsHitBox.SetFirstObstacleIndex(myState.idx + 1);
             GameManager.Instance.AddPoints(myState.exp);
-
+            GameManager.Instance.AddAttackCount(); //공격스킬 카운트
+            
             myPool.EnqueuePool(gameObject);
+        }
+        else
+        {
+            UI_Manager.SetHPBar(myState.nowHP); //현재 hp바 세팅
         }
     }
 }

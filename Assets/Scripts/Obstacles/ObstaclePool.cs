@@ -38,7 +38,6 @@ public class ObstaclePool : MonoBehaviour
     {
         pool.Enqueue(obj);
         obj.SetActive(false);
-        Debug.Log(pool.Count);
         if (pool.Count == poolNum) DropPool();
     }
     private void DropPool()
@@ -55,7 +54,6 @@ public class ObstaclePool : MonoBehaviour
             obj.SetActive(true);    
             obj.transform.position = poolPos[i].position;
             obj.transform.rotation = Quaternion.identity;
-            Debug.Log("now obj num : " + i);
-        }
+        }    
     }
 }
