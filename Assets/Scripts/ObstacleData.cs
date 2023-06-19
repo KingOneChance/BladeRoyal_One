@@ -7,9 +7,7 @@ public class ObstacleData : ScriptableObject
 {
     [SerializeField] private int[] maxHp = new int[AllConst.stageNum];
     [SerializeField] private uint[] exp = new uint[AllConst.stageNum];
-    [SerializeField] Texture2D[] textures;
     [SerializeField] Sprite[] sprites;
-    public Texture2D GetTexture(int num) => textures[num];
     public Sprite GetSprite(int num) => sprites[num];
     public int GetMaxHp(int stageNum) => maxHp[stageNum];
     public uint GetExp(int stageNum) => exp[stageNum];
