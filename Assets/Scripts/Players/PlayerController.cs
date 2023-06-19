@@ -104,7 +104,6 @@ public class PlayerController : MonoBehaviour
     {
         isGround = false;
         float jumpVel = jumpForce;
-        yield return null;
         while (isGround == false)
         {
             yield return waitFixedUpdate;
@@ -117,7 +116,9 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
+                //V1 = V0 - a*t  => 등가속도 일 경우 속력방정식
                 myRigidBody.velocity = myRigidBody.velocity + (jumpVel * Time.deltaTime);
+                //S = V*t
                 transform.position = new Vector2(0, transform.position.y + Time.deltaTime * myRigidBody.velocity);
                 jumpVel += myRigidBody.accelerationG;
                 if (jumpVel <= 0) //점프 가속도가 0이 이하가 되면 낙하로 전환
