@@ -28,7 +28,7 @@ public class GameSceneUiManager : MonoBehaviour
         GameManager.Instance.GameSceneSetting();
         SoundsMananager.Instance.TurnOnStageBGM() ;
     }
-    public void SetStageBar(float num) => stageBar.value = num / (AllConst.stageNum * 2 - 1);
+    public void SetStageBar(float num) => stageBar.value = num / (AllConst.stageNum * 3 - 1);
     public void OnClick_CancelMenu() => menuBox.SetActive(false);
     public void OnClick_Menu() => menuBox.SetActive(true);
     public void GameExit() => Application.Quit();
