@@ -43,6 +43,7 @@ public class ObstaclePool : MonoBehaviour
     private void DropPool()
     {
         waveCount++;
+        GameManager.Instance.SetStageBar();
         if (waveCount >= AllConst.waveNum)
         {
             GameManager.Instance.StageUp();

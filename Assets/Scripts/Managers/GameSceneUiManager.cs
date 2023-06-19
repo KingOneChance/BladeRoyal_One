@@ -13,6 +13,7 @@ public class GameSceneUiManager : MonoBehaviour
     [SerializeField] private GameObject gameOver = null;
     [SerializeField] private GameObject stageClear = null;
     [SerializeField] private GameObject bossAlamText = null;
+    [SerializeField] private Slider stageBar = null;
     [SerializeField] private Slider hpBar = null;
     [SerializeField] private Slider jumpBar = null;
     [SerializeField] private Slider attackBar = null;
@@ -27,6 +28,7 @@ public class GameSceneUiManager : MonoBehaviour
         GameManager.Instance.GameSceneSetting();
         SoundsMananager.Instance.TurnOnStageBGM() ;
     }
+    public void SetStageBar(float num) => stageBar.value = num / (AllConst.stageNum * 2 - 1);
     public void OnClick_CancelMenu() => menuBox.SetActive(false);
     public void OnClick_Menu() => menuBox.SetActive(true);
     public void GameExit() => Application.Quit();

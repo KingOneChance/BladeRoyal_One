@@ -34,6 +34,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int nowStage = 0;
     [SerializeField] private int hearts = 3;
     [SerializeField] private bool isOver = false;
+    [SerializeField] private int stageWave = 0;
 
     [SerializeField] private PlayerInput playerInput = null;
     [SerializeField] private int jumpCount = 0; //스킬위한 카운트
@@ -59,13 +60,13 @@ public class GameManager : MonoBehaviour
         weaponHitBox = FindObjectOfType<WeaponHitBox>();
         Ui_Manager = FindObjectOfType<GameSceneUiManager>();
         playerInput = FindObjectOfType<PlayerInput>();
-        Ui_Manager.SetPointUI(points);
         hearts = 3;
         nowStage = 1;
         points = 0;
         isOver = false;
         jumpCount = 0;
         attackCount = 0;
+        Ui_Manager.SetPointUI(points);
     }
     public GameSceneUiManager GetUiManager() => Ui_Manager;
     public ObstacleData GetObstacleData() => obstacleData;
@@ -162,4 +163,9 @@ public class GameManager : MonoBehaviour
     public void SetBossStage() => Ui_Manager.SetBossStage();
     public void StageClear() => Ui_Manager.StageClear();
     public void DeffenceCoolTime(float time) => Ui_Manager.SetDeffenceTimer(time);
+    public void SetStageBar()
+    {
+        stageWave++;
+        Ui_Manager.SetStageBar(stageWave);
+    }
 }
